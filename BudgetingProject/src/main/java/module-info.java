@@ -6,4 +6,6 @@ module com.wmcg.budgetingproject {
 
     opens com.wmcg.budgetingproject to javafx.fxml;
     exports com.wmcg.budgetingproject;
+    exports com.wmcg.budgetingproject.controller;
+    opens com.wmcg.budgetingproject.controller to javafx.fxml;
 }
