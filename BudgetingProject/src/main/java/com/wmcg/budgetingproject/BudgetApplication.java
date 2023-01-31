@@ -1,5 +1,6 @@
 package com.wmcg.budgetingproject;
 
+import com.wmcg.budgetingproject.controller.BudgetMainController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -15,6 +16,8 @@ public class BudgetApplication extends Application {
         stage.setTitle("Budget Visualizer Application");
         stage.setScene(scene);
         stage.show();
+        BudgetMainController controller = fxmlLoader.getController();
+        controller.setStage(stage);
     }
 
     public static void main(String[] args) {
