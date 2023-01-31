@@ -25,7 +25,7 @@ tasks.withType(JavaCompile) {
 
 application {
     mainModule = 'com.wmcg.budgetingproject'
-    mainClass = 'com.wmcg.budgetingproject.HelloApplication'
+    mainClass = 'com.wmcg.budgetingproject.BudgetApplication'
 }
 
 javafx {
@@ -37,6 +37,10 @@ dependencies {
     implementation('com.dlsc.formsfx:formsfx-core:11.5.0') {
         exclude(group: 'org.openjfx')
     }
+
+    implementation("com.opencsv:opencsv:5.7.1")
+
+    implementation("org.postgresql:postgresql:42.5.1")
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
